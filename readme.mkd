@@ -19,3 +19,17 @@ And also
 
 Twitter bootstrap 2 (you must load the CSS files)
 
+
+## Installation
+
+pip install -e git://github.com/piran/userena-bootstrap.git#egg=userenabootstrap
+
+Add the app to your settings file BEFORE userena
+
+INSTALLED_APPS = (
+    ...
+    'usererabootstrap',
+    'userena',
+    ...
+)
+
