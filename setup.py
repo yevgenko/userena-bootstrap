@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import sys
 
-readme_file = 'README.mkd'
+readme_file = 'readme.mkd'
 try:
     long_description = open(readme_file).read()
 except IOError, err:
