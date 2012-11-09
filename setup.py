@@ -23,6 +23,7 @@ setup(name='userena-bootstrap',
       install_requires = [
         'Django>=1.2.1',
         'django-userena>=1.0.2',
+        'django-bootstrap-form>=2.0.5',
       ],
       classifiers = ['Development Status :: 2 - Pre-Alpha',
                      'Environment :: Web Environment',
