@@ -1,18 +1,18 @@
-{% extends 'userena/base_userena.html' %}
+{% extends 'userena/base_userena_profile.html' %}
 {% load i18n bootstrap %}
 
 {% block title %}{% trans "Edit Profile" %}{% endblock %}
 
 
-{% block sidenav %}
+{% block profile_sidenav %}
     <li><a href="{% url userena_profile_detail user.username %}"><span>{% trans 'View profile' %}</span></a></li>
     <li class="active"><a href="{% url userena_profile_edit user.username %}">{% trans "Edit profile" %}</a></li>
     <li><a href="{% url userena_password_change user.username %}">{% trans "Change password" %}</a></li>
     <li><a href="{% url userena_email_change user.username %}">{% trans "Change email" %}</a></li>
 {% endblock %}
 
-{% block content %}
-    <form action="" enctype="multipart/form-data" method="post" class="form-horizontal">
+{% block profile_content %}
+    <form action="" enctype="multipart/form-data" method="post" class="form-horizontal well">
       {% csrf_token %}
         <fieldset>
         <legend>{% trans "Edit Profile" %}</legend>

@@ -1,0 +1,15 @@
+{% extends 'userena/base_userena.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="span3">
+        <ul class="nav nav-pills nav-stacked">
+            {% block profile_sidenav %}{% endblock %}
+        </ul>
+    </div>
+
+    <div class="span9">
+        {% block profile_content %}{% endblock %}
+    </div>
+</div>
+{% endblock %}
