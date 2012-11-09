@@ -29,7 +29,7 @@ Add the apps to your settings file BEFORE userena
 INSTALLED_APPS = (
     ...
     'bootstrapform',
-    'usererabootstrap',
+    'userenabootstrap',
     'userena',
     ...
 )
